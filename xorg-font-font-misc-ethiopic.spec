@@ -1,5 +1,5 @@
 Summary:	GohaTibebZemen Ethiopic font
-Summary(pl):	Font etiopski GohaTibebZemen
+Summary(pl.UTF-8):   Font etiopski GohaTibebZemen
 Name:		xorg-font-font-misc-ethiopic
 Version:	1.0.0
 Release:	0.1
@@ -22,7 +22,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GohaTibebZemen Ethiopic font in OTF and TTF formats.
 
-%description -l pl
+%description -l pl.UTF-8
 Font etiopski GohaTibebZemen w formatach OTF i TTF.
 
 %prep
