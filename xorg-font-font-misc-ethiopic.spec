@@ -2,7 +2,7 @@ Summary:	GohaTibebZemen Ethiopic font
 Summary(pl.UTF-8):	Font etiopski GohaTibebZemen
 Name:		xorg-font-font-misc-ethiopic
 Version:	1.0.0
-Release:	2
+Release:	3
 License:	MIT
 Group:		Fonts
 Source0:	http://xorg.freedesktop.org/releases/individual/font/font-misc-ethiopic-%{version}.tar.bz2
@@ -18,6 +18,7 @@ Requires(post,postun):	fontpostinst
 Requires:	%{_fontsdir}/OTF
 Requires:	%{_fontsdir}/TTF
 Obsoletes:	XFree86-fonts-Ethiopic
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
