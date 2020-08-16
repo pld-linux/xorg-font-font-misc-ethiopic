@@ -1,13 +1,13 @@
 Summary:	GohaTibebZemen Ethiopic font
 Summary(pl.UTF-8):	Font etiopski GohaTibebZemen
 Name:		xorg-font-font-misc-ethiopic
-Version:	1.0.3
-Release:	2
+Version:	1.0.4
+Release:	1
 License:	MIT
 Group:		Fonts
-Source0:	http://xorg.freedesktop.org/releases/individual/font/font-misc-ethiopic-%{version}.tar.bz2
-# Source0-md5:	6306c808f7d7e7d660dfb3859f9091d2
-URL:		http://xorg.freedesktop.org/
+Source0:	https://xorg.freedesktop.org/releases/individual/font/font-misc-ethiopic-%{version}.tar.bz2
+# Source0-md5:	4ee18ab6c1edf636b8e75b73e6037371
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
 BuildRequires:	fontconfig
@@ -47,7 +47,9 @@ Font etiopski GohaTibebZemen w formatach OTF i TTF.
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
-	DESTDIR=$RPM_BUILD_ROOT
+	DESTDIR=$RPM_BUILD_ROOT \
+	MKFONTSCALE=/bin/true \
+	MKFONTDIR=/bin/true
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -62,6 +64,6 @@ fontpostinst TTF
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog README
+%doc COPYING ChangeLog README.md
 %{_fontsdir}/OTF/GohaTibebZemen.otf
 %{_fontsdir}/TTF/GohaTibebZemen.ttf
